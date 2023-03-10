@@ -1,0 +1,42 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*LAYOUT*/
+body{
+    background-color: #7B287D;
+    font-family: 'Tilt Warp', cursive;
+}
+body h1{
+    color: white;
+    text-align: center;
+}
+.row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.column{
+    width: calc(100% / 7 - 30px);
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7067CF;
+    /*debug*/
+    border: 1px solid black;
+}
+.fizz{
+    background-color: lightgreen;
+}
+.buzz{
+    background-color: #CBF3D2;
+}
+.fizz-buzz{
+    background-color: lightcoral;
+}
