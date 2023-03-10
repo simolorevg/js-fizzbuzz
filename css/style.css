@@ -9,28 +9,29 @@ body{
     background-color: #7B287D;
     font-family: 'Tilt Warp', cursive;
 }
-body h1{
+h1{
     color: white;
-    text-align: center;
 }
 .row{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 80px);
+    grid-template-rows: repeat(10, 80px);
+    grid-gap: 20px;
 }
 .column{
-    width: calc(100% / 7 - 30px);
-    height: 100px;
-    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #7067CF;
-    /*debug*/
-    border: 1px solid black;
+    box-shadow: 5px 5px 10px;
 }
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*SPECIAL STYLES*/
 .fizz{
     background-color: lightgreen;
 }
